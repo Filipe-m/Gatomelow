@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+html{
+  background-color: #030000;
+  color:white
+}
+
+:focus{
+  outline: none;
+}
+
+::selection {
+  background-color: #f06;
+  color: rgb(0, 0, 0);
+}
