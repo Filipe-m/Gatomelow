@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+*, ::before, ::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 button,
@@ -29,4 +31,12 @@ html{
 ::selection {
   background-color: #f06;
   color: rgb(0, 0, 0);
+}
+
+.carousel-control-right{
+  border-radius: 10% 0% 0% 10% / 20% 20% 20% 20%  ;
+}
+
+.carousel-control-left{
+  border-radius: 0% 10% 10% 0% / 20% 20% 20% 20%   ;
 }
