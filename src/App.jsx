@@ -5,7 +5,7 @@ import Zap from './Components/Zap';
 
 function App() {
   return (
-    <div>
+    <div className="bg-white dark:bg-bg-black ">
       <NavBar />
       <Header />
       <Zap />

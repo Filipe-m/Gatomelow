@@ -12,9 +12,15 @@ a {
 }
 
 html{
-  background-color: #030000;
-  color:white
+  background-color: white;
 }
+
+@media (prefers-color-scheme: dark) {
+  html{
+    background-color: #030000;
+  }
+}
+
 
 :focus{
   outline: none;
