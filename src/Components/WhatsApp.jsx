@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ZapLogo from './assets/zap.svg'
 
-export class Zap extends Component {
+export class Whatsapp extends Component {
   constructor(props) {
     super(props)
   
@@ -24,4 +24,4 @@ export class Zap extends Component {
   }
 }
 
-export default Zap
+export default Whatsapp

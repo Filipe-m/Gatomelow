@@ -1,19 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      colors:{
+      colors: {
         'bg-black': '#030000',
         'main-color': '#ce963d',
-        'secundary-color': '#f6dea4',
+        'secundary-color': '#f6dea4'
       },
-      fontFamily:{
-        Tittle: 'Amatic SC'
+      fontFamily: {
+        Tittle: 'Amatic SC',
+        ProductName: 'Montserrat'
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')]
 }

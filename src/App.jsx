@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import NavBar from './Components/NavBar';
 import Header from './Components/Header';
-import Zap from './Components/Zap';
+import WhatsApp from './Components/WhatsApp';
+import Products from './Components/Products';
 
 function App() {
   return (
     <div className="bg-white dark:bg-bg-black h-[100vh] ">
       <NavBar />
       <Header />
-      <Zap />
+      <Products />
+      <WhatsApp />
     </div>
   );
 }

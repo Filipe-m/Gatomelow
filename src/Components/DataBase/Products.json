@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Regata Gatomelow",
+    "price": "69.90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/_dsc76101-6d9779e37a17b9fe5a16587554387875-320-0.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Moletom Gatomelow",
+    "price": "149,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/_dsc77741-01ac66b070b7605b7616587610643590-320-0.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Camiseta Patch Gatomelow Preta",
+    "price": "99,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/preto-011-d67b753f7f0aa10ce116623236438135-320-0.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Camiseta SRD Off-White",
+    "price": "79,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/branca-01-11-987614b5b730c6692716623236021504-320-0.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Regata Bege",
+    "price": "69,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/caramelo-01-fundo-marrom11-874f11a09d111bfa2416622438382990-320-0.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Camiseta Patch Gatomelow Preta",
+    "price": "99,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/_dsc79801-dc919debc11a66898116588426029874-320-0.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Manga Longa Gatomelow Azul",
+    "price": "99,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/_dsc7941-copiar11-5e26f1e92172d4089016621303321849-320-0.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Camiseta Raglan Bege de Algodão Ecológico",
+    "price": "99,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/_dsc77351-cbeb39988123393d7a16587595737598-320-0.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Camiseta Raglan Algodão Ecológico",
+    "price": "99,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/_dsc76541-867c62fb3a59cb0a3816595475064220-320-0.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Camiseta SRD Azul",
+    "price": "79,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/_dsc75831-54ef46687f7f43736e16587546803177-320-0.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Manga Londa Moletim Bege",
+    "price": "109,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/_dsc79211-90f3dfa9d5aa7565ff16588423882520-320-0.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Camiseta SRD Vinho",
+    "price": "79,90",
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/002/267/942/products/_dsc78271-416cf30e69f5e4d5a816588408898779-320-0.jpg"
+  }
+]
