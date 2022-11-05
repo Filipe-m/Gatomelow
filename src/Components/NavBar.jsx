@@ -23,26 +23,26 @@ function NavBar() {
   return (
     <React.Fragment>
       {showSearchBar && (
-        <div className=" transition-all z-20 p-2 flex lg:hidden md:hidden fixed top-0 w-full gap-4 bg-white items-center justify-center">
+        <div className=" transition-all z-50 p-2 flex lg:hidden md:hidden fixed top-0 w-full gap-4 bg-white items-center justify-center">
           <button onClick={close}>
             <img src={backIcon} className="h-11" />
           </button>
           <input className="w-full h-11 text-2xl" type="search" />
-          <button>
+          <button onClick={close}>
             <img src={SearchMobile} className="h-11" />
           </button>
         </div>
       )}
       <nav className="fixed top-0 w-full z-30 lg:max-h-44 sm:max-h-48 max-h-36 pb-2 overflow-hidden bg-bg-black">
         <section className=" flex justify-between items-center mt-6 relative mx-4 ">
-          <div className=" border-secundary-color/50 lg:border-[1px] md:border-b-[1px] border-x-transparent border-t-transparent w-min flex p-2 max-h-14 rounded-md md:focus-within:border-x-secundary-color md:focus-within:border-t-secundary-color md:focus-within:border-secundary-color border-2 ">
+          <div className=" border-secundary-color/50 border-b-0 md:border-b-[1px] border-x-transparent border-t-transparent w-min flex p-2 max-h-14 rounded-md md:focus-within:border-x-secundary-color md:focus-within:border-t-secundary-color md:focus-within:border-secundary-color border-2 ">
             <input
               type="search"
               placeholder="Buscar"
               className=" bg-transparent lg:w-44 md:w-40 w-0 text-white text-base placeholder:opacity-50"
             />
-            <button className="w-max !opacity-100 " onClick={show}>
-              <img className="lg:w-5 !opacity-100 w-6" src={Search} />
+            <button className="w-max opacity-100 " onClick={show}>
+              <img className="lg:w-5 opacity-100 w-6" src={Search} />
             </button>
           </div>
           <div className="flex absolute left-[50%] top-0 translate-x-[-50%] ">
