@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ZapLogo from './assets/zap.svg'
+import { BsWhatsapp } from "react-icons/bs";
 
 export class Whatsapp extends Component {
   constructor(props) {
@@ -17,9 +17,9 @@ export class Whatsapp extends Component {
 
   render() {
     return (
-      <div className="fixed bottom-0 right-0 m-6 dark:bg-white bg-black p-2 rounded-full">
-        <img onClick={this.alerta} className="w-12" src={ZapLogo} alt="Whatsapp" />
-      </div>
+      <button className="fixed bottom-0 right-0 m-4 cur bg-green-400 p-3 rounded-full" onClick={this.alerta}>
+        <span><BsWhatsapp className=' w-6 h-6 fill-white' /></span>
+      </button>
     )
   }
 }
