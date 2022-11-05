@@ -31,7 +31,7 @@ function Products() {
       {product}
     </div>
     <div className='w-full grid place-items-center my-8 '>
-      <button className=' bg-[#c3a343] text-white w-[85%] h-10 font-ProductName font-normal text-sm tracking-[2px] uppercase '>Ver todos os produtos</button>
+      <button className=' bg-[#c3a343] text-white w-[85%] md:w-[30%] h-10 font-ProductName font-normal text-sm tracking-[2px] uppercase '>Ver todos os produtos</button>
     </div>
     </React.Fragment>
   )

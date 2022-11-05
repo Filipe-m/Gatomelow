@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import WhatsApp from './Components/WhatsApp';
 import Products from './Components/Products';
 import SubHeader from './Components/SubHeader';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Products />
       <SubHeader />
+      <Footer />
       <WhatsApp />
     </div>
   );
