@@ -5,8 +5,9 @@ import Cart from './assets/cart.svg'
 import backIcon from './assets/backIcon.svg'
 import SearchMobile from './assets/searchMobile.svg'
 
-function NavBar() {
+function NavBar({page}) {
   const [showSearchBar, setShowSearchBar] = useState(false)
+
 
   const forgot = () => {
     alert('O animal do autor não fez/esqueceu de fazer isso')
@@ -33,7 +34,7 @@ function NavBar() {
           </button>
         </div>
       )}
-      <nav className="fixed top-0 w-full z-30 lg:max-h-44 sm:max-h-48 max-h-36 pb-2 overflow-hidden bg-bg-black">
+      <nav className="fixed top-0 w-full z-30 sm:max-h-48 max-h-36 pb-2 overflow-hidden bg-bg-black">
         <section className=" flex justify-between items-center mt-6 relative mx-4 ">
           <div className=" border-secundary-color/50 border-b-0 md:border-b-[1px] border-x-transparent border-t-transparent w-min flex p-2 max-h-14 rounded-md md:focus-within:border-x-secundary-color md:focus-within:border-t-secundary-color md:focus-within:border-secundary-color border-2 ">
             <input
@@ -71,20 +72,20 @@ function NavBar() {
         </section>
         <section className="flex justify-center items-center w-full lg:mt-16 mt-6">
           <ul className="text-main-color lg:text-sm text-sm flex  justify-evenly items-center gap-6">
-            <li className="border-y-[1px] p-2 hover:opacity-50 hover:text-[#fff]">
-              <a href="index.html">INÍCIO</a>
+            <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "home" ? 'border-y-[1px] p-2':''}`}>
+              <a href="/Gatomelow/">INÍCIO</a>
             </li>
-            <li className="hover:opacity-50 hover:text-[#fff]">
-              <a href="#" onClick={forgot}>
+            <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "produtos" ? 'border-y-[1px] p-2':''}`}>
+              <a href="/Gatomelow/Produtos">
                 PRODUTOS
               </a>
             </li>
-            <li className="hover:opacity-50 hover:text-[#fff]">
+            <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "contato" ? 'border-y-[1px] p-2':''}`}>
               <a href="#" onClick={forgot}>
                 CONTATO
               </a>
             </li>
-            <li className="hover:opacity-50 hover:text-[#fff]">
+            <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "quem somos" ? 'border-y-[1px] p-2':''}`}>
               <a href="#" onClick={forgot}>
                 QUEM SOMOS
               </a>

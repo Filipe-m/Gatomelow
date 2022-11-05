@@ -1,8 +1,10 @@
 import React from 'react'
 import Data from '../DataBase/Products.json'
 import { Link } from 'react-router-dom'
+import SubHeader from '../Home/SubHeader'
+import NavBar from '../NavBar'
 
-function Products() {
+function AllProducts() {
   const product = Data.map(product => (
     <Link
       to={`/Gatomelow/Produto/${product.id}`}
@@ -32,16 +34,13 @@ function Products() {
 
   return (
     <React.Fragment>
-      <div className=" mt-4 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 place-items-center lg:mx-40 md:mx-40 mx-4 gap-x-0 gap-y-4 ">
+      <NavBar page={"produtos"} />
+      <div className=" mb-12 sm:mt-52 mt-36 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 place-items-center lg:mx-40 md:mx-40 mx-4 gap-x-0 gap-y-4 ">
         {product}
       </div>
-      <div className="w-full grid place-items-center my-8 ">
-        <button className=" bg-[#c3a343] text-white w-[85%] md:w-[30%] h-10 font-ProductName font-normal text-sm tracking-[2px] uppercase ">
-          Ver todos os produtos
-        </button>
-      </div>
+      <SubHeader />
     </React.Fragment>
   )
 }
 
-export default Products
+export default AllProducts

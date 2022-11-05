@@ -9,6 +9,7 @@ import Whatsapp from '../WhatsApp'
 function Home() {
   return (
     <React.Fragment>
+      <NavBar page={"home"} />
       <Header />
       <Products />
       <SubHeader />
