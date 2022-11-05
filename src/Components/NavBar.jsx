@@ -33,16 +33,16 @@ function NavBar() {
           </button>
         </div>
       )}
-      <nav className="fixed top-0 w-full z-10 lg:max-h-44 sm:max-h-48 max-h-36 pb-2 overflow-hidden bg-bg-black">
+      <nav className="fixed top-0 w-full z-30 lg:max-h-44 sm:max-h-48 max-h-36 pb-2 overflow-hidden bg-bg-black">
         <section className=" flex justify-between items-center mt-6 relative mx-4 ">
-          <div className=" border-secundary-color lg:border-b-[1px] md:border-b-[1px] border-b0 w-min flex p-2 max-h-14 lg:focus-within:outline-2 outline-secundary-color outline-0 outline">
+          <div className=" border-secundary-color/50 lg:border-[1px] md:border-b-[1px] border-x-transparent border-t-transparent w-min flex p-2 max-h-14 rounded-md md:focus-within:border-x-secundary-color md:focus-within:border-t-secundary-color md:focus-within:border-secundary-color border-2 ">
             <input
               type="search"
               placeholder="Buscar"
               className=" bg-transparent lg:w-44 md:w-40 w-0 text-white text-base placeholder:opacity-50"
             />
-            <button className="w-max " onClick={show}>
-              <img className="lg:w-5 w-6" src={Search} />
+            <button className="w-max !opacity-100 " onClick={show}>
+              <img className="lg:w-5 !opacity-100 w-6" src={Search} />
             </button>
           </div>
           <div className="flex absolute left-[50%] top-0 translate-x-[-50%] ">
