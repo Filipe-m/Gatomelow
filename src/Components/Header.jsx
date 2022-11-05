@@ -14,6 +14,7 @@ function Header() {
         interval={5000}
         autoPlay
         width={1400}
+        color={'#030000ac'}
       />
     </div>
   )

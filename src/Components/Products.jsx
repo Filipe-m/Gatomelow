@@ -25,7 +25,16 @@ function Products() {
     </div>
   ))
 
-  return <div className=" mt-4 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 place-items-center lg:mx-40 md:mx-40 mx-4 gap-x-0 gap-y-4 ">{product}</div>
+  return (
+    <React.Fragment>
+    <div className=" mt-4 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 place-items-center lg:mx-40 md:mx-40 mx-4 gap-x-0 gap-y-4 ">
+      {product}
+    </div>
+    <div className='w-full grid place-items-center my-8 '>
+      <button className=' bg-[#c3a343] text-white w-[85%] h-10 font-ProductName font-normal text-sm tracking-[2px] uppercase '>Ver todos os produtos</button>
+    </div>
+    </React.Fragment>
+  )
 }
 
 export default Products

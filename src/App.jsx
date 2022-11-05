@@ -3,6 +3,7 @@ import NavBar from './Components/NavBar';
 import Header from './Components/Header';
 import WhatsApp from './Components/WhatsApp';
 import Products from './Components/Products';
+import SubHeader from './Components/SubHeader';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBar />
       <Header />
       <Products />
+      <SubHeader />
       <WhatsApp />
     </div>
   );

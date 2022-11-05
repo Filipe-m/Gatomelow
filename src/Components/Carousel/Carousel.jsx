@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import CarouselControls from './CarouselControls'
 import CarouselIndicator from './CarouselIndicator'
 
-export const Carousel = ({ slides, interval = 5000, controls=false, indicators=false, autoPlay = true, width= 1000 }) => {
+export const Carousel = ({ slides, interval = 5000, controls=false, indicators=false, autoPlay = true, width= 1000, color }) => {
   const [currentSlide, setcurrentSlide] = useState(0)
   const slideInterval = useRef()
 
@@ -56,7 +56,7 @@ export const Carousel = ({ slides, interval = 5000, controls=false, indicators=f
           <CarouselItem slide={slide} key={index} stopSlide={stopSlideTimer} startSlide={startSlideTimer} />
         ))}
       </div>
-      { indicators && <CarouselIndicator slides={slides} currentIndex={currentSlide} switchIndex={switchIndex} />}
+      { indicators && <CarouselIndicator color={color} slides={slides} currentIndex={currentSlide} switchIndex={switchIndex} />}
      { controls && <CarouselControls prev={prev} next={next} />}
     </div>
   )
