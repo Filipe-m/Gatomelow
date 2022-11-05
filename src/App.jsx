@@ -1,22 +1,23 @@
-import { useState } from 'react'
-import NavBar from './Components/NavBar';
-import Header from './Components/Header';
-import WhatsApp from './Components/WhatsApp';
-import Products from './Components/Products';
-import SubHeader from './Components/SubHeader';
-import Footer from './Components/Footer';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import NavBar from './Components/NavBar'
+import Home from './Components/Home/Home'
+import Footer from './Components/Footer'
+import Whatsapp from './Components/WhatsApp'
 
 function App() {
   return (
-    <div className="bg-white dark:bg-bg-black h-[100vh] ">
-      <NavBar />
-      <Header />
-      <Products />
-      <SubHeader />
-      <Footer />
-      <WhatsApp />
-    </div>
-  );
+    <React.Fragment>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/Gatomelow/" element={<Home />} />
+        </Routes>
+        <Footer />
+        <Whatsapp />
+      </Router>
+    </React.Fragment>
+  )
 }
 
 export default App

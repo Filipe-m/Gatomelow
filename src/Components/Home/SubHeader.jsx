@@ -1,11 +1,11 @@
 import React from 'react'
 import { GrInstagram } from 'react-icons/gr'
-import Subbanner1 from './assets/subheader1.jpg'
-import Enviamos from './assets/Enviamos.png'
-import Pague from './assets/Pague.png'
-import Compre from './assets/Compre.png'
-import Tudo from './assets/EnviarPagarComprar.png'
-import { Carousel } from './Carousel/Carousel'
+import Subbanner1 from '../assets/subheader1.jpg'
+import Enviamos from '../assets/Enviamos.png'
+import Pague from '../assets/Pague.png'
+import Compre from '../assets/Compre.png'
+import Tudo from '../assets/EnviarPagarComprar.png'
+import { Carousel } from '../Carousel/Carousel'
 
 function SubHeader() {
   

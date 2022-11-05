@@ -1,5 +1,5 @@
 import React from 'react'
-import Data from './DataBase/Products.json'
+import Data from '../DataBase/Products.json'
 
 function Products() {
   const product = Data.map(product => (
@@ -27,12 +27,14 @@ function Products() {
 
   return (
     <React.Fragment>
-    <div className=" mt-4 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 place-items-center lg:mx-40 md:mx-40 mx-4 gap-x-0 gap-y-4 ">
-      {product}
-    </div>
-    <div className='w-full grid place-items-center my-8 '>
-      <button className=' bg-[#c3a343] text-white w-[85%] md:w-[30%] h-10 font-ProductName font-normal text-sm tracking-[2px] uppercase '>Ver todos os produtos</button>
-    </div>
+      <div className=" mt-4 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 place-items-center lg:mx-40 md:mx-40 mx-4 gap-x-0 gap-y-4 ">
+        {product}
+      </div>
+      <div className="w-full grid place-items-center my-8 ">
+        <button className=" bg-[#c3a343] text-white w-[85%] md:w-[30%] h-10 font-ProductName font-normal text-sm tracking-[2px] uppercase ">
+          Ver todos os produtos
+        </button>
+      </div>
     </React.Fragment>
   )
 }
