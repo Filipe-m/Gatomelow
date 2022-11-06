@@ -5,6 +5,10 @@ import SubHeader from '../Home/SubHeader'
 import NavBar from '../NavBar'
 
 function AllProducts() {
+
+  const toTop = () => window.scrollTo(0, 0)
+  toTop()
+
   const product = Data.map(product => (
     <Link
       to={`/Gatomelow/Produto/${product.id}`}

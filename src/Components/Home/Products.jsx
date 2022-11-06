@@ -3,6 +3,7 @@ import Data from '../DataBase/Products.json'
 import { Link } from 'react-router-dom'
 
 function Products() {
+
   const product = Data.map(product => (
     <Link
       to={`/Gatomelow/Produto/${product.id}`}
@@ -36,9 +37,9 @@ function Products() {
         {product}
       </div>
       <div className="w-full grid place-items-center my-8 ">
-        <button className=" bg-[#c3a343] text-white w-[85%] md:w-[30%] h-10 font-ProductName font-normal text-sm tracking-[2px] uppercase ">
+        <Link to='/Gatomelow/Produtos' className=" bg-[#c3a343] grid place-items-center text-white w-[85%] md:w-[30%] h-10 font-ProductName font-normal text-sm tracking-[2px] uppercase ">
           Ver todos os produtos
-        </button>
+        </Link>
       </div>
     </React.Fragment>
   )
