@@ -4,6 +4,7 @@ import Logo from './assets/logo.svg'
 import Cart from './assets/cart.svg'
 import backIcon from './assets/backIcon.svg'
 import SearchMobile from './assets/searchMobile.svg'
+import { Link } from 'react-router-dom'
 
 function NavBar({page}) {
   const [showSearchBar, setShowSearchBar] = useState(false)
@@ -73,12 +74,12 @@ function NavBar({page}) {
         <section className="flex justify-center items-center w-full lg:mt-16 mt-6">
           <ul className="text-main-color lg:text-sm text-sm flex  justify-evenly items-center gap-6">
             <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "home" ? 'border-y-[1px] p-2':''}`}>
-              <a href="/Gatomelow/">INÍCIO</a>
+              <Link to='/Gatomelow/'>INÍCIO</Link>
             </li>
             <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "produtos" ? 'border-y-[1px] p-2':''}`}>
-              <a href="/Gatomelow/Produtos">
+              <Link to="/Gatomelow/Produtos">
                 PRODUTOS
-              </a>
+              </Link>
             </li>
             <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "contato" ? 'border-y-[1px] p-2':''}`}>
               <a href="#" onClick={forgot}>

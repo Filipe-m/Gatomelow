@@ -26,12 +26,12 @@ function Product() {
         </h2>
         <div className=" md:flex mt-4 text-white">
           <img
-            className="md:w-[40%] md:h-[35rem] mb-4 "
+            className="md:w-[40%] mx-auto md:mx-0 md:h-[35rem] mb-4 "
             src={data['image']}
             alt={data['name']}
           />
           <div className="md:w-[40%] mx-auto font-ProductName text-left text-secundary-color">
-            <div className=" border-b-[1px] border-secundary-color/50 pb-6 ">
+            <div className=" border-b-[1px] md:border-none border-secundary-color/50 pb-6 ">
               <h1 className="w-full md:mb-6 mb-2 md:text-4xl text-2xl font-normal">
                 {data['name']}
               </h1>
@@ -39,7 +39,7 @@ function Product() {
                 R${data['price']}
               </h2>
             </div>
-            <div className="py-6 grid gap-3 uppercase border-b-[1px] border-secundary-color/50 pb-6">
+            <div className="py-6 grid gap-3 uppercase border-b-[1px] md:border-none border-secundary-color/50 pb-6">
               <h3 className="text-md">
                 <span className="font-bold">4</span>x de{' '}
                 <span className="font-bold">
@@ -52,7 +52,7 @@ function Product() {
               <img className='w-16' src={Pix} alt="Pix" />
               <button className='text-left underline uppercase text-main-color text-sm w-fit'>Ver meios de pagamento</button>
             </div>
-            <div className='py-6 grid gap-3 uppercase border-b-[1px] border-secundary-color/50 pb-6'>
+            <div className='py-6 grid gap-3 uppercase border-b-[1px] md:border-none border-secundary-color/50 pb-6'>
               <h2>Tamanho: <span className='font-bold'>{size}</span></h2>
               <div className='flex text-sm gap-4'>
                 <button className={`border-2 px-2 border-main-color py-1 ${size == 'M' ? '': 'opacity-30'}`} onClick={()=> setsize('M')}>M</button>
@@ -60,8 +60,8 @@ function Product() {
                 <button className={`border-2 px-2 border-main-color py-1 ${size == 'GG' ? '': 'opacity-30'}`} onClick={()=> setsize('GG')}>GG</button>
               </div>
             </div>
-            <div className='py-6 flex items-center justify-between gap-3 uppercase border-b-[1px] border-secundary-color/50 pb-6'>
-              <h2 className='text-sm'>Quantidade</h2>
+            <div className='py-6 flex items-center justify-between gap-3 uppercase border-b-[1px] md:border-none border-secundary-color/50 pb-6'>
+              <h2 className='text-sm'>Quantidade:</h2>
               <input className='w-16 h-10 text-black flex text-center' type="number"/>
             </div>
             <button className='uppercase w-full h-12 mt-6 text-white flex justify-center items-center text-center py-6 bg-[#c3a343]'>Comprar</button>
