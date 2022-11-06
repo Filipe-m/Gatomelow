@@ -5,6 +5,8 @@ import Footer from './Components/Footer'
 import Whatsapp from './Components/WhatsApp'
 import Product from './Components/Product/Product'
 import AllProducts from './Components/Products/AllProducts'
+import Contato from './Components/Contato/Contato'
+import QuemSomos from './Components/QuemSomos/QuemSomos'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="/Gatomelow/" element={<Home />} />
           <Route path="/Gatomelow/Produto/:id" element={<Product />} />
           <Route path="/Gatomelow/Produtos" element={<AllProducts />} />
+          <Route path='/Gatomelow/Contato' element={<Contato />} />
+          <Route path='/Gatomelow/Sobre' element={<QuemSomos />} />
         </Routes>
         <Footer />
         <Whatsapp />

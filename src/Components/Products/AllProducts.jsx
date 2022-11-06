@@ -39,7 +39,7 @@ function AllProducts() {
   return (
     <React.Fragment>
       <NavBar page={"produtos"} />
-      <div className=" mb-12 sm:mt-52 mt-36 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 place-items-center lg:mx-40 md:mx-40 mx-4 gap-x-0 gap-y-4 ">
+      <div className=" mb-12 sm:mt-52 mt-44 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 place-items-center lg:mx-40 md:mx-40 mx-4 gap-x-0 gap-y-4 ">
         {product}
       </div>
       <SubHeader />

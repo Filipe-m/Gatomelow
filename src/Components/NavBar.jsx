@@ -35,7 +35,7 @@ function NavBar({page}) {
           </button>
         </div>
       )}
-      <nav className="fixed top-0 w-full z-30 sm:max-h-48 max-h-36 pb-2 overflow-hidden bg-bg-black">
+      <nav className="fixed top-0 w-full z-30 sm:max-h-48 max-h-38 pb-2 overflow-hidden bg-bg-black">
         <section className=" flex justify-between items-center mt-6 relative mx-4 ">
           <div className=" border-secundary-color/50 border-b-0 md:border-b-[1px] border-x-transparent border-t-transparent w-min flex p-2 max-h-14 rounded-md md:focus-within:border-x-secundary-color md:focus-within:border-t-secundary-color md:focus-within:border-secundary-color border-2 ">
             <input
@@ -72,24 +72,24 @@ function NavBar({page}) {
           </div>
         </section>
         <section className="flex justify-center items-center w-full lg:mt-16 mt-6">
-          <ul className="text-main-color lg:text-sm text-sm flex  justify-evenly items-center gap-6">
-            <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "home" ? 'border-y-[1px] p-2':''}`}>
+          <ul className="text-main-color mx-2 lg:text-sm text-sm text-center flex  justify-evenly items-center gap-3 lg:gap-16">
+            <li className={` p-2 hover:opacity-50 w-[25%] grid place-items-center hover:text-[#fff] ${page === "home" ? 'border-y-[1px] p-2':''}`}>
               <Link to='/Gatomelow/'>INÍCIO</Link>
             </li>
-            <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "produtos" ? 'border-y-[1px] p-2':''}`}>
+            <li className={` p-2 hover:opacity-50 w-[25%] grid place-items-center border-w hover:text-[#fff] ${page === "produtos" ? 'border-y-[1px] p-2':''}`}>
               <Link to="/Gatomelow/Produtos">
                 PRODUTOS
               </Link>
             </li>
-            <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "contato" ? 'border-y-[1px] p-2':''}`}>
-              <a href="#" onClick={forgot}>
+            <li className={` p-2 hover:opacity-50 w-[25%] grid place-items-center hover:text-[#fff] ${page === "contato" ? 'border-y-[1px] p-2':''}`}>
+              <Link to="/Gatomelow/Contato" >
                 CONTATO
-              </a>
+              </Link>
             </li>
-            <li className={` p-2 hover:opacity-50 hover:text-[#fff] ${page === "quem somos" ? 'border-y-[1px] p-2':''}`}>
-              <a href="#" onClick={forgot}>
+            <li className={` p-2 hover:opacity-50 w-[25%] grid place-items-center hover:text-[#fff] ${page === "quem somos" ? 'border-y-[1px] p-2':''}`}>
+              <Link to="/Gatomelow/Sobre">
                 QUEM SOMOS
-              </a>
+              </Link>
             </li>
           </ul>
         </section>

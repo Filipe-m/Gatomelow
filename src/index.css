@@ -19,9 +19,6 @@ html {
   background-color: #030000;
 }
 
-:focus {
-  outline: none;
-}
 
 ::selection {
   background-color: #f06;

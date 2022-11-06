@@ -5,7 +5,7 @@ import Products from './Products'
 import SubHeader from './SubHeader'
 import Footer from '../Footer'
 import Whatsapp from '../WhatsApp'
-import PopUp from '../PopUp'
+import PopUp from './PopUp'
 
 function Home() {
   return (

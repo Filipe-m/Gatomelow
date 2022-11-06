@@ -6,7 +6,7 @@ import { Carousel } from '../Carousel/Carousel'
 function Header() {
   const slides = [banner1, banner2]
   return (
-    <div className="Container mt-36 lg:mt-48 sm:mt-48 ">
+    <div className="Container mt-44  sm:mt-52 ">
       <Carousel
         slides={slides}
         controls
