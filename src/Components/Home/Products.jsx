@@ -32,7 +32,7 @@ function Products() {
 
   return (
     <React.Fragment>
-      <div className=" mt-4 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 place-items-center lg:mx-40 md:mx-40 mx-4 gap-x-0 gap-y-4 ">
+      <div className=" mt-4 lg:mt-16 grid lg:grid-cols-4 grid-cols-2 place-items-center lg:mx-40 md:mx-40 mx-4 gap-x-4 lg:gap-x-0 gap-y-12 ">
         {product}
       </div>
       <div className="w-full grid place-items-center my-8 ">
